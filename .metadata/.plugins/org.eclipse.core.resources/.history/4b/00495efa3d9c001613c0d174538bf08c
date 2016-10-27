@@ -42,13 +42,12 @@ public class Dealer extends Player {
   }
   
   public boolean Stand(Player a_player){
-	  if (m_deck != null) {
-	      	ShowHand();
-	      	while(m_hitRule.DoHit(this)){
-	      		Card c = m_deck.GetCard();
-	      		c.Show(true);
-	      		DealCard(c);
-	      	}
+	  if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver()) {
+	      Card c;
+	      c = m_deck.GetCard();
+	      c.Show(true);
+	      a_player.DealCard(c);
+	      
 	      return true;
 	    }
 	    return false;  
