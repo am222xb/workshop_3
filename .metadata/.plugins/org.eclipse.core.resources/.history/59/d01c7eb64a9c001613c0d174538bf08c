@@ -14,7 +14,7 @@ public class SimpleView implements IView
   Scanner scanner = new Scanner(System.in);
         public char GetInput()
         {
-            char c = scanner.next().toLowerCase().charAt(0);
+            char c = scanner.next().charAt(0);
             return c;      
         }
 

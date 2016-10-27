@@ -27,6 +27,7 @@ class BasicHitStrategy implements IHitStrategy {
 				}
 			}
 			if(score == 6){
+				System.out.println();
 				return 21;
 			}
 		}

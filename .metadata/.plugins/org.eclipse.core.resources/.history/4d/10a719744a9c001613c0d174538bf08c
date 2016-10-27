@@ -12,10 +12,18 @@ public class SimpleView implements IView
           System.out.println("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
         }
   Scanner scanner = new Scanner(System.in);
-        public char GetInput()
+        public int GetInput()
         {
-            char c = scanner.next().toLowerCase().charAt(0);
-            return c;      
+          try {
+            int c = System.in.read();
+            while (c == '\r' || c =='\n') {
+              c = System.in.read();
+            }
+            return c;
+          } catch (java.io.IOException e) {
+            System.out.println("" + e);
+            return 0;
+          }
         }
 
         public void DisplayCard(BlackJack.model.Card a_card)
