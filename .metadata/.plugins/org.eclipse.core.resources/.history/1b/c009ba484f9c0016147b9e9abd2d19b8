@@ -1,0 +1,31 @@
+package BlackJack.model.rules;
+
+
+
+import BlackJack.model.Card;
+import BlackJack.model.Player;
+
+class BasicHitStrategy implements IHitStrategy {
+	
+	public boolean DoHit(Player a_dealer) {
+		return a_dealer.CalcScore() < hitLimit(a_dealer);  
+	}
+	private int hitLimit(Player a_dealer){
+		Iterable<Card> temp_hand = a_dealer.GetHand();
+		
+        for(BlackJack.model.Card c : temp_hand)
+        {
+        	if(c.GetValue()== Card.Value.Ace){
+        			c.remove();
+        		
+        		
+        		
+        		
+        		
+        	}
+        }
+        
+		return 17;
+	}
+	 
+}	
