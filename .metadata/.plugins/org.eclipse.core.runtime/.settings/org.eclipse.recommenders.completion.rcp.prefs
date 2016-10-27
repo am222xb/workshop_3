@@ -1,2 +1,6 @@
+<<<<<<< Updated upstream
 completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.types
+=======
+completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.discovery\:org.eclipse.recommenders.completion.rcp.tips.types
+>>>>>>> Stashed changes
 eclipse.preferences.version=1

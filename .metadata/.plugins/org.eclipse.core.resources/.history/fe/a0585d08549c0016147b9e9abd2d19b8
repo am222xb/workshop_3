@@ -1,0 +1,5 @@
+package BlackJack.model.rules;
+
+public class winConditionDealer implements IWinCondition{
+
+}

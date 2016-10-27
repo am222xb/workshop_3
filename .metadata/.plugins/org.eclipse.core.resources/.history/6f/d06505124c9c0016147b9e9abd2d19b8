@@ -1,0 +1,17 @@
+package BlackJack.model.rules;
+
+import BlackJack.model.Player;
+
+class BasicHitStrategy implements IHitStrategy {
+	private int score;
+	private Player a_dealer;
+	public boolean DoHit(Player a_dealer) {
+		this.a_dealer = a_dealer;
+		score = a_dealer.CalcScore();
+		return score < hitLimit();  
+	}
+	private int hitLimit(){
+		
+		return 17;
+	}
+}	

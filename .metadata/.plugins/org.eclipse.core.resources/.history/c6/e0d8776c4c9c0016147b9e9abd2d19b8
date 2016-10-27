@@ -1,0 +1,17 @@
+package BlackJack.model.rules;
+
+import java.util.List;
+
+import BlackJack.model.Card;
+import BlackJack.model.Player;
+
+class BasicHitStrategy implements IHitStrategy {
+	
+	public boolean DoHit(Player a_dealer) {
+		return a_dealer.CalcScore() < hitLimit(a_dealer);  
+	}
+	private int hitLimit(Player a_dealer){
+		List<Card> hand = a_dealer.GetHand();
+		return 17;
+	}
+}	
