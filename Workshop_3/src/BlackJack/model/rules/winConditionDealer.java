@@ -1,9 +1,22 @@
 package BlackJack.model.rules;
 
+import BlackJack.model.Player;
+
 public class winConditionDealer implements IWinCondition{
 
-	public boolean winCondition(int dealer_score, int player_score) {
-		
+	public boolean winCondition(Player dealer, Player player, int maxScore) {
+		if (player.CalcScore() > maxScore) {
+		      return true;
+		    } 
+		    else if (dealer.CalcScore() > maxScore) {
+		      return false;
+		    }
+		    if(player.CalcScore()<dealer.CalcScore()){
+		    	return true;
+		    }
+		    else if(player.CalcScore()>dealer.CalcScore()){
+		    	return false;
+		    }
 		return true;
 	}
 

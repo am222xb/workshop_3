@@ -16,13 +16,8 @@ public class PlayGame {
         a_view.DisplayGameOver(a_game.IsDealerWinner());
     }
 
-<<<<<<< Updated upstream
     char input = a_view.GetInput();
-    
-=======
-    int input = a_view.GetInput();
-    System.out.println(input);
->>>>>>> Stashed changes
+
     if (input == 'p')
     {
         a_game.NewGame();

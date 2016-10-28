@@ -1,5 +1,7 @@
 package BlackJack.model.rules;
 
+import BlackJack.model.Player;
+
 public interface IWinCondition {
-	boolean winCondition(int dealer_score, int player_score );
+	boolean winCondition(Player dealer, Player player, int maxScore);
 }

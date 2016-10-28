@@ -1,10 +1,6 @@
 package BlackJack.model.rules;
 
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 import BlackJack.model.Card;
 import BlackJack.model.Player;
 
@@ -38,8 +34,4 @@ class BasicHitStrategy implements IHitStrategy {
 		return 17;
 	}
 
-<<<<<<< Updated upstream
 }
-=======
-}	
->>>>>>> Stashed changes

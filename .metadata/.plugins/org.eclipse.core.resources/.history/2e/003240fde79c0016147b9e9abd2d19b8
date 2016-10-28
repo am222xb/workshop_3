@@ -1,0 +1,12 @@
+package BlackJack.model.rules;
+
+import 
+
+public class winConditionDealer implements IWinCondition{
+
+	public boolean winCondition() {
+		
+		return true;
+	}
+
+}
