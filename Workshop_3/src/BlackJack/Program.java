@@ -7,7 +7,7 @@ import BlackJack.controller.*;
 public class Program
 {
 
-  public static void main(String[] a_args)
+  public static void main(String[] a_args) throws InterruptedException
   {
   
     Game g = new Game();

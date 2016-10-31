@@ -8,6 +8,7 @@ public class Dealer extends Player {
   private INewGameStrategy m_newGameRule;
   private IHitStrategy m_hitRule;
   private IWinCondition m_winCondition;
+  private NewCard m_newCard = new NewCard();
 
   public Dealer(RulesFactory a_rulesFactory) {
   
@@ -32,11 +33,8 @@ public class Dealer extends Player {
 
   public boolean Hit(Player a_player) {
     if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver()) {
-      Card c;
-      c = m_deck.GetCard();
-      c.Show(true);
-      a_player.DealCard(c);
-      
+      Deal(a_player);
+      m_newCard.isNewCard(true);
       return true;
     }
     return false;
@@ -46,15 +44,19 @@ public class Dealer extends Player {
 	  if (m_deck != null) {
 	      	ShowHand();
 	      	while(m_hitRule.DoHit(this)){
-	      		Card c = m_deck.GetCard();
-	      		c.Show(true);
-	      		DealCard(c);
+	      		Deal(this);
+	      		m_newCard.isNewCard(true);
 	      	}
 	      return true;
 	    }
 	    return false;  
   }
 
+  public void Deal(Player p){
+	   Card c = m_deck.GetCard();
+	   c.Show(true);
+	   p.DealCard(c);
+ }
   public boolean IsDealerWinner(Player a_player) {
     return m_winCondition.winCondition(this ,a_player, g_maxScore);
 
