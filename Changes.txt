@@ -22,7 +22,11 @@ DONE
 *Design and implement a variable rules for who wins the game. This variation could for example vary who wins on an equal score (in one implementation the Dealer wins, in the other the Player). The design should make it easy to add other variants without changing the Dealer.
 
 
+<<<<<<< HEAD
+
+=======
 DONE
+>>>>>>> f7f8fcb9d669784eb58c537559eb9f5c492d3521
 ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 *The code for getting a card from the deck, show the card and give it to a player is duplicated in a number of places. Make a refactoring to remove this duplication and that supports low coupling/high cohesion. The code that is duplicated i similar to this:
 Card c = deck.GetCard();
