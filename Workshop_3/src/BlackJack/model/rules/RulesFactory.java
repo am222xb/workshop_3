@@ -10,6 +10,7 @@ public class RulesFactory {
 		return new AmericanNewGameStrategy();
 	}
 	public IWinCondition GetWinRule() {
-		return new winConditionPlayer();
+		return new winFavorsDealer();
 	}
+	
 }
