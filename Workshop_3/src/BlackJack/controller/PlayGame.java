@@ -15,16 +15,10 @@ public class PlayGame {
     {
         a_view.DisplayGameOver(a_game.IsDealerWinner());
     }
-  
+ 
 
-    int input = a_view.GetInput();
-    System.out.println(input);
-
-<<<<<<< HEAD
-=======
     char input = a_view.GetInput();
 
->>>>>>> f7f8fcb9d669784eb58c537559eb9f5c492d3521
     if (input == 'p')
     {
         a_game.NewGame();

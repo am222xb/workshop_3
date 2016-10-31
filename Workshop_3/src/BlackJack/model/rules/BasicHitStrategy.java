@@ -36,7 +36,6 @@ class BasicHitStrategy implements IHitStrategy {
 }
 
 
-<<<<<<< HEAD
-=======
-}
->>>>>>> f7f8fcb9d669784eb58c537559eb9f5c492d3521
+
+
+

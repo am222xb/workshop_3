@@ -13,11 +13,7 @@ public class Dealer extends Player {
   
     m_newGameRule = a_rulesFactory.GetNewGameRule();
     m_hitRule = a_rulesFactory.GetHitRule();
-<<<<<<< HEAD
-    m_winCondition = new winConditionDealer();
-=======
-    m_winCondition = a_rulesFactory.GetWinRule();
->>>>>>> f7f8fcb9d669784eb58c537559eb9f5c492d3521
+
     /*for(Card c : m_deck.GetCards()) {
       c.Show(true);
       System.out.println("" + c.GetValue() + " of " + c.GetColor());
@@ -60,17 +56,8 @@ public class Dealer extends Player {
   }
 
   public boolean IsDealerWinner(Player a_player) {
-<<<<<<< HEAD
-    if (a_player.CalcScore() > g_maxScore) {
-      return true;
-    } else if (CalcScore() > g_maxScore) {
-      return false;
-    }
-    System.out.println(CalcScore()+", "+ a_player.CalcScore());
-    return m_winCondition.winCondition(CalcScore() ,a_player.CalcScore());
-=======
     return m_winCondition.winCondition(this ,a_player, g_maxScore);
->>>>>>> f7f8fcb9d669784eb58c537559eb9f5c492d3521
+
   }
 
   public boolean IsGameOver() {
