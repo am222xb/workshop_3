@@ -11,7 +11,8 @@ public class SimpleView implements IView
 		System.out.println("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
 	}
 	Scanner scanner = new Scanner(System.in);
-	public char GetInput()
+	
+	public int GetInput()
 	{
 		char c = scanner.next().toLowerCase().charAt(0);
 		return c;      
@@ -56,5 +57,8 @@ public class SimpleView implements IView
 			System.out.println("You Won!");
 		}
 
+	}
+	public int[] getMenuArray() {
+		return new int[]{'p','h','s','q'};
 	}
 }
