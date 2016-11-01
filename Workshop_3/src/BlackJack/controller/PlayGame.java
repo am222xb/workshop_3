@@ -26,8 +26,7 @@ public class PlayGame {
     else if (input == 'h')
     {
     	
-        if(a_game.Hit())
-        	Thread.sleep(1000);
+        a_game.Hit();
         
     }
     else if (input == 's')

@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 TASKS_FILTERS_MIGRATE=true
+=======
+PROBLEMS_FILTERS_MIGRATE=true
+>>>>>>> Stashed changes
 eclipse.preferences.version=1
-platformState=1453982907501
+platformState=1453876624130
 quickStart=false
 tipsAndTricks=true
