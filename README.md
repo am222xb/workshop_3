@@ -1,3 +1,7 @@
-# blackjack_java
+# Blackjack workshop 3 UML
 
-Fork this code to work with java in workshop 3. This repo only contains java files.
+Download the whole repository and run the playGame.java to run the program.
+
+See changes_final_submit for the changes after the peer review.
+
+
