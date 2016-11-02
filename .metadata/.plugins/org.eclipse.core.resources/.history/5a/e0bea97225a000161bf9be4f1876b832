@@ -1,0 +1,24 @@
+package BlackJack.model.rules;
+
+import BlackJack.model.Deck;
+import BlackJack.model.Dealer;
+import BlackJack.model.Player;
+import BlackJack.model.Card;  
+
+class InternationalNewGameStrategy implements INewGameStrategy {
+
+  public boolean NewGame(Deck a_deck, Dealer a_dealer, Player a_player) {
+ 
+    a_dealer.Deal(a_player);
+    Deal(a_dealer);
+    Deal(a_player);
+  
+  
+    return true;
+  }
+  public void Deal(Player p){
+	   Card c = m_deck.GetCard();
+	   c.Show(true);
+	   p.DealCard(c);
+}
+}

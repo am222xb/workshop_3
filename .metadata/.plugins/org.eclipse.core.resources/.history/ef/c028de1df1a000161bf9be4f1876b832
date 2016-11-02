@@ -1,0 +1,7 @@
+package BlackJack.model;
+
+public interface ObserverManager {
+	void AddObserver(Observer o);
+	void NotifyObservers();
+	
+}
