@@ -1,0 +1,11 @@
+Changes Final Submit:
+
+Removed the hidden dependency between view and controller.
+
+Removed some of the duplication we missed in the NewGameStrategy classes.
+
+Added a observer.
+
+Remade and changed the class diagram so it is up to date.
+
+Implemented soft 17 as a seperate strategy pattern.
