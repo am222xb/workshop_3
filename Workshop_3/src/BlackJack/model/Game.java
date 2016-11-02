@@ -9,10 +9,14 @@ public class Game {
   {
     m_dealer = new Dealer(new BlackJack.model.rules.RulesFactory());
     m_player = new Player();
-    
+   
   }
-    
-    
+    public Player getDealer(){
+    	return m_dealer;
+    }
+   public Player getPlayer(){
+	   return m_player;
+   }
   public boolean IsGameOver()
   {
     return m_dealer.IsGameOver();

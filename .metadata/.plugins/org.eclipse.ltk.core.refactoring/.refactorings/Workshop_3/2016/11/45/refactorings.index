@@ -1,1 +1,6 @@
 1477999574086	Delete element
+1478084976029	Rename type 'winFavorsDealer'
+1478084994017	Rename type 'winFavorsPlayer'
+1478086813047	Rename method 'NotifyObservers'
+1478086826442	Rename method 'AddObserver'
+1478086950040	Rename field 'listOfObservers'

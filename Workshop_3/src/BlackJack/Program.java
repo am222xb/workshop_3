@@ -11,10 +11,10 @@ public class Program
   {
   
     Game g = new Game();
-    //IView v = new SimpleView();
-    IView v = new SwedishView();
-    PlayGame ctrl = new PlayGame();
+    IView v = new SimpleView();
+    //IView v = new SwedishView();
+    PlayGame ctrl = new PlayGame(g,v);
     
-    while (ctrl.Play(g, v));
+    while (ctrl.Play());
   }
 }
